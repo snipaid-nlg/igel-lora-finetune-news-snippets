@@ -208,20 +208,12 @@ def train(
 
 
 def generate_prompt(data_point):
-    # sorry about the formatting disaster gotta move fast
-    if data_point["input"]:
-        return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
-### Instruction:
+    return f"""Nachfolgend ist eine Anweisung, die eine Aufgabe beschreibt, zusammen mit einer Eingabe, die weiteren Kontext liefert. Schreiben Sie eine Antwort, die die Aufgabe angemessen erfüllt.
+### Anweisung:
 {data_point["instruction"]}
-### Input:
+### Eingabe:
 {data_point["input"]}
-### Response:
-{data_point["output"]}"""
-    else:
-        return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request.
-### Instruction:
-{data_point["instruction"]}
-### Response:
+### Antwort:
 {data_point["output"]}"""
 
 
