@@ -23,7 +23,7 @@ def train(
     # model/data params
     base_model: str = "",  # the only required argument
     data_path: str = "./news_snippet_mlsum_instruct.json",
-    output_dir: str = "./lora-alpaca",
+    output_dir: str = "./lora-igel",
     # training hyperparams
     batch_size: int = 128,
     micro_batch_size: int = 4,
