@@ -22,7 +22,7 @@ from peft import (
 def train(
     # model/data params
     base_model: str = "",  # the only required argument
-    data_path: str = "./alpaca_data_cleaned.json",
+    data_path: str = "./news_snippet_mlsum_instruct.json",
     output_dir: str = "./lora-alpaca",
     # training hyperparams
     batch_size: int = 128,
