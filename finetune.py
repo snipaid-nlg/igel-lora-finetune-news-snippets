@@ -45,7 +45,7 @@ def train(
     resume_from_checkpoint: str = None,  # either training checkpoint or final adapter
 ):
     print(
-        f"Training Alpaca-LoRA model with params:\n"
+        f"Training IGEL-LoRA model with params:\n"
         f"base_model: {base_model}\n"
         f"data_path: {data_path}\n"
         f"output_dir: {output_dir}\n"
