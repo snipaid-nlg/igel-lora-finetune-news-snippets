@@ -13,7 +13,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import (
     prepare_model_for_int8_training,
     PeftModel,
-    get_peft_model,
     get_peft_model_state_dict,
     set_peft_model_state_dict,
 )
