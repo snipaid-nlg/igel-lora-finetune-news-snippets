@@ -22,7 +22,7 @@ from peft import (
 def train(
     # model/data params
     base_model: str = "",  # the only required argument
-    data_path: str = "./news_snippet_mlsum_instruct.json",
+    data_path: str = "./news-snippet-mlsum-instruct-10.csv",
     output_dir: str = "./lora-igel",
     # training hyperparams
     batch_size: int = 128,
@@ -132,7 +132,7 @@ def train(
         torch_dtype=torch.float16,
     )
 
-    data = load_dataset("json", data_files=data_path)
+    data = load_dataset("csv", data_files=data_path)
 
     if resume_from_checkpoint:
         # Check the available weights and load them
