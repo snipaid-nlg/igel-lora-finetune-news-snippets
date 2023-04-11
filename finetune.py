@@ -65,7 +65,7 @@ def train(
     )
     assert (
         base_model
-    ), "Please specify a --base_model, e.g. --base_model='decapoda-research/llama-7b-hf'"
+    ), "Please specify a --base_model, e.g. --base_model='malteos/bloom-6b4-clp-german'"
     gradient_accumulation_steps = batch_size // micro_batch_size
 
     device_map = "auto"
