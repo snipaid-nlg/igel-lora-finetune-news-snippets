@@ -76,6 +76,7 @@ def train(
 
     model = AutoModelForCausalLM.from_pretrained(
         base_model,
+        torch_dtype=torch.float16,
         load_in_8bit=True,
         device_map=device_map,
     )
