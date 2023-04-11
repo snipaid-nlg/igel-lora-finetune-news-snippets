@@ -133,6 +133,7 @@ def train(
     )
 
     data = load_dataset("csv", data_files=data_path)
+    data = data.remove_columns("label")
 
     if resume_from_checkpoint:
         # Check the available weights and load them
