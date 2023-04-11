@@ -125,7 +125,7 @@ def train(
 
     model = prepare_model_for_int8_training(model)
 
-    LORA_WEIGHTS = "tloen/alpaca-lora-7b"
+    LORA_WEIGHTS = "philschmid/instruct-igel-001"
     model = PeftModel.from_pretrained(
         model,
         LORA_WEIGHTS,
