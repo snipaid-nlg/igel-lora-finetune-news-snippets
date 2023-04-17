@@ -1,7 +1,7 @@
-# igel-lora-finetune-news-snippets
-This repository contains the sources for fine-tuning LoRA adapters for instructed news snippet generation in german language with the IGEL model.
+# Fine-Tune IGEL LoRA
+This repository contains the sources for fine-tuning LoRA adapters for news snippet generation in german language with the IGEL model.
 
-## How to use this code for continued finetuning of IGEL
+## How to use this code for continued instruction finetuning of IGEL
 
 1. Get access to a GPU. E.g. rent 1 x RTX 4090 on [Vast.ai](https://vast.ai/).
 2. Connect to the instance via ssh.
